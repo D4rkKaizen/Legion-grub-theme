@@ -7,7 +7,7 @@
 ### Ubuntu
 copy the extracted theme to `/boot/grub/themes`
 ```
-sudo cp CyberRe\ 1.0.0/CyberRe /boot/grub/themes/ -r
+sudo cp Legion-grub-theme /boot/grub/themes/ -r
 
 sudo nano /etc/default/grub
 ```
