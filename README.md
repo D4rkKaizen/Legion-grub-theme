@@ -1,6 +1,6 @@
 ## Preview
 ---
-![[LegionThemePreviev.png]]
+![Legion-grub-theme Preview "Photo"](LegionThemePreviev.png)
 
 ## Installing
 ---
