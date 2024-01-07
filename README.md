@@ -1,13 +1,13 @@
 ## Preview
 ---
-![Legion-grub-theme Preview "Photo"](LegionThemePreviev.png)
+![[LegionThemePreviev.png]]
 
 ## Installing
 ---
 ### Ubuntu
 copy the extracted theme to `/boot/grub/themes`
 ```
-sudo cp Legion-grub-theme /boot/grub/themes/ -r
+sudo cp CyberRe\ 1.0.0/CyberRe /boot/grub/themes/ -r
 
 sudo nano /etc/default/grub
 ```
@@ -58,6 +58,42 @@ sudo reboot
  *You may also install it via Ubuntu way*
  
 ---
+### Fedora
+Download and Extract the theme. (make sure to look inside the folder if there are any other versions of the theme.
+
+Open the Terminal and copy the file to `/boot/grub2/theme`, for example
+```
+sudo cp -r poly-light /boot/grub2/theme
+```
+
+  
+Next after copying, you go into the grub config like so
+```
+sudo nano /etc/default/grub
+```
+
+  
+Comment out the line **GRUB_TERMINAL_OUTPUT=console**, by putting a # infront of it, and make a new like with the following:
+```
+GRUB_THEME="/boot/grub2/theme/INSERT-THEME/theme.txt"
+```
+Change INSERT-THEME to whatever the name of the folder is, that you copied earlier. Then you can press CTRL+S and CTRL+X to exit the config.
+
+  
+
+Finally you type:
+```
+sudo grub2-mkconfig -o /etc/grub2-efi.cfg
+```
+
+When you've done this, you can reboot and see if the theme applied!
+```
+sudo reboot
+```
+
+---
+
+
 ## Removing the Theme
 
 ```
@@ -75,3 +111,4 @@ sudo update-grub
 ```
 reboot
 ```
+
