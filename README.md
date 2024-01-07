@@ -1,6 +1,6 @@
 ## Preview
 ---
-![[LegionThemePreviev.png]]
+![Grub Preview "Screenshot"](LegionThemePreviev.png)
 
 ## Installing
 ---
